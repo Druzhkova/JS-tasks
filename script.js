@@ -200,4 +200,16 @@ console.log(array);
 
 // task 5.2
 
+let string = 'You can’t make bricks without straw';
+
+function getTrimmedString(start, end) {
+  return string.slice(start, end);
+}
+
+let trimmedString = getTrimmedString(4, 15);
+
+console.log(string);
+console.log(trimmedString);
+
+// task 5.3
 
