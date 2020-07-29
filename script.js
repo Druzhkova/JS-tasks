@@ -213,3 +213,39 @@ console.log(trimmedString);
 
 // task 5.3
 
+let person = {};
+
+function createObjectPerson() {
+  person.name = prompt('What is your name?');
+  person.surname = prompt('What is your surname?');
+  person.age = prompt('How old are you?');
+  person.spouse = prompt(`Are you married or not?(You need to write 'yes' or 'no')`);
+  if (person.spouse === 'yes') {
+      person.spouse = {};
+      person.spouse.name = prompt("What's his name?");
+      person.spouse.age = +prompt("How old is he?");
+  }
+  let personChildren = prompt(`Do you have children?(You need to write 'yes' or 'no')`);
+  if (personChildren === 'yes') {
+    person.children = [];
+    addChild();
+  }
+  person.profession = prompt("Enter your profession");
+}
+
+function addChild() {
+  let amountOfChildren = +prompt('How many children do you have');
+  for (let i = 0; i < amountOfChildren; i++) {
+    person.children[i] = {};
+    person.children[i].name = prompt('Write the name of the child');
+    person.children[i].age = +prompt(`Write the child's age`);
+  }
+}
+
+createObjectPerson();
+console.log(person);
+
+// task 5.4
+
+
+
