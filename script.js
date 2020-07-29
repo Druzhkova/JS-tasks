@@ -1,4 +1,4 @@
-// Task #1
+// Task #1.1
 
 let userNumber = +prompt('Write your number, please');
 let userNumberToMinus = +prompt('How much to take from the previous result?');
@@ -61,7 +61,6 @@ for (let i=userFirstNumber; i<=userSecondNumber; i++) {
 // task 3.1 - 3.2
 
 // Сheck in
-
 let userLogin = prompt("Create your login");
 
 while (userLogin.length < 5 || userLogin.length >= 20 ) {
