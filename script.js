@@ -166,3 +166,38 @@ for (let person of personList) {
 // task 4.3
 
 console.log(personList);
+
+// task 5.1
+
+let array = [];
+
+function createNewArray(number, coefficient){
+  while(array.length < number) {
+    array.push(+prompt('Enter the number'));
+  }
+
+  let operation = prompt('Do you want to increase or decrease the number?');
+
+  if (operation === 'increase') {
+      return array.map(function(item) {
+        return item = item * coefficient;
+      });
+  } else if (operation === 'decrease') {
+      return array.map(function(item) {
+        return item = item / coefficient;
+      });
+  } else if (operation === '') {
+    operation = prompt('The field cannot be empty. Try again');
+  } else operation = prompt('Incorrect value. Try again');   
+}
+
+let number = prompt('How many numbers do you want to add to the array?');
+let coefficient = prompt('What coefficient do you want to apply?');
+
+console.log(array);
+array = createNewArray(number, coefficient);
+console.log(array);
+
+// task 5.2
+
+
