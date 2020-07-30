@@ -247,5 +247,53 @@ console.log(person);
 
 // task 5.4
 
+let arr = ['молоко', 34, 717, false, 'копы', true, 74, 108, 'пpогроммист', 'котик', 'мемчик', true, true, 666, false];
 
+let arrayTypeOfNumber = [];
+let arrayTypeOfString = [];
+let arrayTypeOfBoolean = [];
 
+function getSortedArrays(array) { 
+	for (item of array) {
+		switch (typeof item) {
+			case "number":
+				arrayTypeOfNumber.push(item);
+				break;
+			case "string":
+				arrayTypeOfString.push(item);
+				break;
+			case "boolean":
+				arrayTypeOfBoolean.push(item);
+				break;
+		}
+	}
+}
+
+getSortedArrays(arr);
+
+function getNumberMultipliedByTwo(array) {
+	return array.map(function(item){
+    return item *= 2
+  });
+}
+console.log(getNumberMultipliedByTwo(arrayTypeOfNumber));
+
+function getReverseBooleanValue(array) {
+	return array.map(function(item){
+    return item =! item;
+  });
+}
+console.log(getReverseBooleanValue(arrayTypeOfBoolean));
+
+function getLetterChanged(array) {
+  let string = array.join(","); 
+  for (let item of string) {
+      if (item === "о") {
+          string = string.replace('о','л'); 
+      }
+  }
+  return string.split(",");
+}
+console.log(getLetterChanged(arr));
+
+// task 5.5
