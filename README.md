@@ -104,7 +104,7 @@ let family = {<br>
 object.generator = [{propertyTitle: 'name', propertyValue: 'Sasha'}, {propertyTitle: 'age', propertyValue: 17}, {propertyTitle: 'hobbies', propertyValue: ['reading', 'PS4']}]; console.log(object) => { name: 'Sasha', age: 17} Подсказка - функция генератор делается через дескриптор с помощью сеттера, геттер ей не нужен.<br>
 <br>
 
-<strong>Task 6.1</strong><br>
+<strong>Task 6.2</strong><br>
 Создать метод объекта, при вызове которого будут меняться свойства нашего объекта или создаваться новый с такими же свойствами, в новом объекте этого метода быть не должно. Код для изменения и создания будет одинаковый.
 <br>
 
